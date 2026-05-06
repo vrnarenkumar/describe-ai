@@ -1,0 +1,23 @@
+# Core LangGraph / LangChain
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+
+# LLM providers — free only
+langchain-groq>=0.2.0          # Free Llama via Groq (default)
+langchain-ollama>=0.2.0        # Local Llama via Ollama
+
+# GitHub API
+PyGithub>=2.3.0
+
+# Git operations
+GitPython>=3.1.40
+
+# Streamlit UI
+streamlit>=1.35.0
+
+# Environment variable loading
+python-dotenv>=1.0.0
+
+# Type hints backport (Python < 3.11)
+typing-extensions>=4.9.0
