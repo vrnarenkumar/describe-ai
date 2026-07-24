@@ -40,7 +40,7 @@ def clone_or_fetch(clone_url: str, clone_dir: Path) -> tuple[Repo, str]:
         repo.remotes.origin.fetch()
     else:
         logger.info("Cloning %s → %s", clone_url, clone_dir)
-        repo = Repo.clone_from(clone_url, clone_dir)
+        repo = Repo.clone_from(clone_url, clone_dir, depth=1)
 
     default_branch = repo.active_branch.name
     return repo, default_branch
